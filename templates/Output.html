@@ -1,0 +1,39 @@
+<html>
+
+  <head>
+    <title>Expected weight.</title>
+  </head>
+  
+  <body>
+    <p><a href="{{url_for('inputPage')}}">Return to HOME.</a></p>
+	
+	<h3>
+	Loadcell sensitivity: {{sensParam}} millivolts/Volts<br>
+	Rated weight: {{rateWeight}} Kilograms<br>
+	Excitation voltage: {{excitVolt}} Volts<br>
+	{% if formFlag == 'calcWeight' %}
+	Measured voltage: {{measVolt}} millivolts
+	</h3>	
+	<h2 style = "font-family:tahoma; background-color:lightgreen">
+	Expected weight = {{LCw}} Kilograms
+	</h2>	
+	{% elif formFlag == 'calcVolts' %}
+	Expected weight: {{measWeight}} Kilograms
+	</h3>	
+	<h2 style = "font-family:tahoma; background-color:lightgreen">
+	Corresponding millivolts = {{LCv}} millivolts
+	</h2>
+	{% endif %}
+  </body>
+  
+  <footer>
+    <p>Designed by: <b>Eng. Mohammed Ali Ismail</b>  under Python Flask framework.</p>
+	<p>
+	<a href="https://www.linkedin.com/in/mohammedismail1982">Linkedin</a><b> || </b>
+	<a href="https://www.slideshare.net/MohammedAlismail3">Slideshare</a><b> || </b>
+	<a href="https://github.com/hamadasoma">Github</a><b> || </b>
+	<a href="https://goo.gl/c7m8fp">Resume</a>
+	</p>	
+  </footer>
+  
+</html>

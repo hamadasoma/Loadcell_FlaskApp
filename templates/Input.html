@@ -1,0 +1,64 @@
+<html>
+
+  <head>
+    <title>Loadcell Calculations Interface.</title>
+  </head>
+  
+  <body>
+    <style>
+      h3{font-family:tahoma; background-color:lightblue; border-left-style:solid;
+         border-left-color:blue; border-left-width:5px;}	  
+    </style>
+	
+    <h3>Loadcell online calculations.</h3>
+	<h4 style="font-family:tahoma">
+	This is a web framework built based on <i><b>Python Flask framework</b></i> for training purposes.<br>
+	</h4>
+	<p><a href="https://github.com/hamadasoma/Loadcell_FlaskApp">Click here to get to the project at Github.</a></p>
+	
+    <div style="background:darkcyan">
+       <form method="POST">
+          <fieldset>
+            <legend><b style="font-family:tahoma; color:darkorange">Calculating weight from measured millivolts.</b></legend>
+             Rated weight:<br>
+			 <input type="text" name="RateWeight"/>Kilograms.<br>
+             Excitation voltage:<br>
+			 <input type="text" name="ExcitVolt"/>Volts.<br>
+             Sensitivity:<br>
+			 <input type="text" name="SensParam"/>millivolts/Volts<br>
+			 Measured millivolts:<br>
+			 <input type="text" name="MeasVolt"/>millivolts<br><br>
+			 <input type="submit" name="calcWeight" value="Calulate weight"/>
+          </fieldset>
+       </form>
+    </div>
+	
+	<div style="background:darkcyan">
+       <form method="POST">
+          <fieldset>
+            <legend><b style="font-family:tahoma; color:darkorange">Calculating the millivolts corresponding to expected weight.</b></legend>
+             Rated weight:<br>
+			 <input type="text" name="RateWeight"/>Kilograms.<br>
+             Excitation voltage:<br>
+			 <input type="text" name="ExcitVolt"/>Volts.<br>
+             Sensitivity:<br>
+			 <input type="text" name="SensParam"/>millivolts/Volts<br>
+			 Expected weight:<br>
+			 <input type="text" name="MeasWeight"/>Kilograms.<br><br>
+			 <input type="submit" name="calcVolts" value="Caculate millivolts"/>
+          </fieldset>
+       </form>
+    </div>
+  </body>
+  
+  <footer style="background-color:gray; position:fixed; bottom:8px; right:16px;">
+    <p>Designed by: <b>Eng. Mohammed Ali Ismail</b>  under Python Flask framework.</p>
+	<p>
+	<a href="https://www.linkedin.com/in/mohammedismail1982">Linkedin</a><b> || </b>
+	<a href="https://www.slideshare.net/MohammedAlismail3">Slideshare</a><b> || </b>
+	<a href="https://github.com/hamadasoma">Github</a><b> || </b>
+	<a href="https://goo.gl/c7m8fp">Resume</a>
+	</p>	
+  </footer>
+  
+</html>
